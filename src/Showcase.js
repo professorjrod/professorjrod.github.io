@@ -45,7 +45,7 @@ const Project = () => {
       <li className="swiper-slide">
         <a
           href="read if stinky"
-          className="relative block border border-gray-100 mb-8"
+          className="relative block border border-black mb-8"
         >
           {/* <button
             type="button"
