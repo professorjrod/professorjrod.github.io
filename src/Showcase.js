@@ -53,7 +53,7 @@ const Showcase = () => {
             githubUrl={"https://github.com/professorjrod/art-gallery-frontend"}
             coverUrl={"https://media.timeout.com/images/100471869/image.jpg"}
             title={"Art Gallery"}
-            tag={"Sinatra server with React frontend"}
+            tag={"Sinatra HTTP server / React frontend"}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -75,7 +75,7 @@ const Project = ({ title, githubUrl, coverUrl, tag }) => {
   return (
     <ul className="swiper-wrapper">
       <li className="swiper-slide">
-        <div className="relative block border-double border-4 rounded-md border-black mb-8 p-2">
+        <div className="relative block border-double border-4 rounded-md border-gray-500 mb-8 p-2">
           <h5 className="mt-4 text-lg font-bold">{title}</h5>
           <img
             alt="Hotdug Mug"
@@ -84,11 +84,11 @@ const Project = ({ title, githubUrl, coverUrl, tag }) => {
           />
 
           <div className="p-6">
-            <span className="inline-block bg-yellow-400 px-3 py-1 text-xs font-medium">
+            <span className="my-2 inline-block bg-gray-400 px-3 py-1 text-xs font-medium">
               {tag}
             </span>
 
-            <p className="mt-2 text-sm font-medium text-gray-600">$14.99</p>
+            <br />
 
             <button name="add" type="button" className="btn btn-blue">
               <a className="text-sm font-medium" href={githubUrl}>
