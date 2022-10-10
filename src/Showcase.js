@@ -8,7 +8,7 @@ import "swiper/css/scrollbar";
 const Showcase = () => {
   return (
     <>
-      <h2 className="text-2xl font-bold">Project showcase</h2>
+      <h2 className="mt-2 text-2xl font-bold text-center">Project showcase</h2>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
@@ -17,65 +17,87 @@ const Showcase = () => {
         pagination={{ clickable: true }}
       >
         <SwiperSlide>
-          <Project />
+          <Project
+            githubUrl={"https://github.com/professorjrod/Jareds-NLP-Client"}
+            coverUrl={
+              "https://stackify.com/wp-content/uploads/2019/01/Ruby-vs-Python.jpg"
+            }
+            title={"Jared's NLP Client"}
+            tag={"Machine learning tool"}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Project />
+          <Project
+            githubUrl={"https://github.com/professorjrod/Weather-App"}
+            coverUrl={
+              "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2VhdGhlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+            }
+            title={"Weather App"}
+            tag={"React Weather Api"}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Project />
+          <Project
+            githubUrl={
+              "https://github.com/Garret-Gallant/stackoverflat-mono-repo"
+            }
+            coverUrl={
+              "https://www.hiveage.com/wp-content/uploads/2015/06/reputation-management-small-business.jpg"
+            }
+            title={"Stackoverflat"}
+            tag={"Fullstack Forum"}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Project />
+          <Project
+            githubUrl={"https://github.com/professorjrod/art-gallery-frontend"}
+            coverUrl={"https://media.timeout.com/images/100471869/image.jpg"}
+            title={"Art Gallery"}
+            tag={"Sinatra server with React frontend"}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Project />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Project />
+          <Project
+            githubUrl={"https://github.com/nickwarren47/Beer-Recipe-App"}
+            coverUrl={
+              "https://www.travelandleisure.com/thmb/wD6IY_2Rn4HlJ29kodSoaOVbCOI=/1200x0/filters:no_upscale():max_bytes(150000):strip_icc()/hopworks-PORTLANDBREW0719-3b273d245a464d429ea8e4a971ad0332.jpg"
+            }
+            title={"Beer Recipe App"}
+            tag={"JavaScript"}
+          />
         </SwiperSlide>
       </Swiper>
     </>
   );
 };
 
-const Project = () => {
+const Project = ({ title, githubUrl, coverUrl, tag }) => {
   return (
     <ul className="swiper-wrapper">
       <li className="swiper-slide">
-        <a
-          href="read if stinky"
-          className="relative block border border-black mb-8"
-        >
-          {/* <button
-            type="button"
-            className="absolute right-4 top-4 rounded-full bg-black p-2 text-white"
-          ></button> */}
-
+        <div className="relative block border-double border-4 rounded-md border-black mb-8 p-2">
+          <h5 className="mt-4 text-lg font-bold">{title}</h5>
           <img
             alt="Hotdug Mug"
-            src="https://i.pinimg.com/originals/60/9f/79/609f79c036f54c4564ab72e0f89df98f.gif"
-            className="h-56 w-full object-contain lg:h-72"
+            src={coverUrl}
+            className="h-56 w-full object-contain lg:h-72 p-2 rounded-full"
           />
 
           <div className="p-6">
             <span className="inline-block bg-yellow-400 px-3 py-1 text-xs font-medium">
-              New
+              {tag}
             </span>
-
-            <h5 className="mt-4 text-lg font-bold">Snoop Dogg dancing</h5>
 
             <p className="mt-2 text-sm font-medium text-gray-600">$14.99</p>
 
-            <button
-              name="add"
-              type="button"
-              className="mt-4 flex w-full items-center justify-center rounded-sm bg-yellow-500 px-8 py-4"
-            >
-              <span className="text-sm font-medium"> View on GitHub </span>
+            <button name="add" type="button" className="btn btn-blue">
+              <a className="text-sm font-medium" href={githubUrl}>
+                {" "}
+                View on GitHub{" "}
+              </a>
             </button>
           </div>
-        </a>
+        </div>
       </li>
     </ul>
   );
