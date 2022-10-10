@@ -12,7 +12,9 @@ const Showcase = () => {
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
-        slidesPerView={3}
+        slidesPerView={
+          window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3
+        }
         navigation
         pagination={{ clickable: true }}
       >
