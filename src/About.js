@@ -15,9 +15,9 @@ const About = () => {
               className="shadow rounded-full max-w-full h-auto border-none m-4"
             />{" "}
             I am a constant learner and hungry to take the initiative and
-            partner with like minded people! I am proficient in ruby, react and
-            postgres and can easily pick up other languages and tools like Git,
-            REST, and NPM to name a few.
+            partner with like minded people! I am proficient in JavaScript, and
+            Ruby and can easily pick up other languages and tools like Git, Vue,
+            Yarn, and Django to name a few.
           </p>
         </div>
       </div>

@@ -36,3 +36,6 @@ h4 {
 ul {
   @apply md:flex md:items-center;
 }
+li {
+  @apply m-0.5;
+}
