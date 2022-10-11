@@ -31,7 +31,7 @@ nav {
   @apply mx-auto sm:h-12 md:h-auto lg:h-auto flex max-w-[80%] justify-between p-4 bg-purple-300 rounded-br-xl rounded-bl-xl;
 }
 h4 {
-  @apply text-sm text-center font-bold;
+  @apply text-xs ml-2 text-center font-bold;
 }
 ul {
   @apply md:flex md:items-center;

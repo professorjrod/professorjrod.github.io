@@ -9,6 +9,7 @@ const Nav = () => {
       <a
         className=" inline-block h-fit w-fit p-2 items-center justify-center rounded-lg bg-violet-400 hover:bg-violet-500"
         href="https://www.github.com/professorjrod"
+        target="_blank"
       >
         Github👋
       </a>
@@ -26,7 +27,11 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <a className="rounded-lg px-3 py-2 grow" href="https://dev.to/jaredm">
+          <a
+            className="rounded-lg px-3 py-2 grow"
+            href="https://dev.to/jaredm"
+            target="_blank"
+          >
             Blog
           </a>
         </li>
@@ -35,6 +40,7 @@ const Nav = () => {
             <a
               className="flex items-center rounded-lg px-3 py-2 "
               href="https://www.linkedin.com/in/jared-mumaw-9395a6243/"
+              target="_blank"
             >
               LinkedIn
             </a>
