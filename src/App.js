@@ -1,13 +1,20 @@
 import React from "react";
 import Nav from "./Nav";
 import Showcase from "./Showcase";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import About from "./About";
+import Skills from "./Skills";
 import "./index.css";
+
 const App = () => {
   return (
     <Router>
       <Nav />
-      <Showcase />
+      <Routes>
+        <Route path="/" element={<Showcase />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Skills />
     </Router>
   );
 };

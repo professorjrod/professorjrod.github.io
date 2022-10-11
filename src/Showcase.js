@@ -26,6 +26,7 @@ const Showcase = () => {
             }
             title={"Jared's NLP Client"}
             tag={"Machine learning tool"}
+            demoLink={"https://www.loom.com/share/84b4bbc39bbb4e908ca6d4d427ae19c8"}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -73,7 +74,7 @@ const Showcase = () => {
   );
 };
 
-const Project = ({ title, githubUrl, coverUrl, tag }) => {
+const Project = ({ title, githubUrl, coverUrl, tag, demoLink }) => {
   return (
     <ul className="swiper-wrapper">
       <li className="swiper-slide">
@@ -91,7 +92,13 @@ const Project = ({ title, githubUrl, coverUrl, tag }) => {
             </span>
 
             <br />
-
+            {demoLink ?  <a className="text-sm font-medium bg-yellow-400 p-2 text-center" href={demoLink}>
+                {" "}
+                Tech Demo{" "}
+              </a> : null}
+            
+          
+            <br/>
             <button name="add" type="button" className="btn btn-blue">
               <a className="text-sm font-medium" href={githubUrl}>
                 {" "}
