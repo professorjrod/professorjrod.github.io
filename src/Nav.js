@@ -13,7 +13,7 @@ const Nav = () => {
         Github👋
       </a>
 
-      <ul className="flex items-center gap-2 text-sm font-medium text-black">
+      <ul className="gap-2 text-sm font-medium text-black">
         <li>
           <Link to="/about">
             <a className="rounded-lg px-3 py-2"> About </a>

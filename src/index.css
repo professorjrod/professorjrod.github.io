@@ -33,3 +33,6 @@ nav {
 h4 {
   @apply text-sm text-center font-bold;
 }
+ul {
+  @apply md:flex md:items-center;
+}
