@@ -360,7 +360,7 @@ const Skills = () => {
               viewBox="0 0 256 255"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
-              xlink="http://www.w3.org/1999/xlink"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
               preserveAspectRatio="xMidYMid"
             >
               <defs>
