@@ -15,8 +15,7 @@ const Nav = () => {
               (url.pathname === "/" ? " font-bold bg-purple-500" : "")
             }
           >
-            {" "}
-            About{" "}
+            About
           </span>
         </Link>
         <Link to="/projects">

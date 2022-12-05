@@ -1,8 +1,7 @@
 import React from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 const Showcase = () => {
@@ -105,19 +104,17 @@ const Project = ({ title, githubUrl, coverUrl, tag, demoLink }) => {
             <br />
             {demoLink ? (
               <a
-                className="text-sm font-medium bg-yellow-400 p-2 text-center"
+                className="text-sm font-medium bg-[#fde74c] p-2 text-center"
                 href={demoLink}
               >
-                {" "}
-                Demo{" "}
+                Demo
               </a>
             ) : null}
 
             <br />
-            <button name="add" type="button" className="btn btn-blue">
+            <button name="add" type="button" className="btn mt-2 bg-[#db5461]">
               <a className="text-sm font-medium" href={githubUrl}>
-                {" "}
-                View on GitHub{" "}
+                View on GitHub
               </a>
             </button>
           </div>
