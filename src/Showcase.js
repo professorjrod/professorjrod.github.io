@@ -20,6 +20,15 @@ const Showcase = () => {
       >
         <SwiperSlide>
           <Project
+            githubUrl={"https://github.com/biobreak"}
+            coverUrl={"https://i.imgur.com/bhQBe41.png"}
+            title={"BioBreak"}
+            tag={"A biotech equity data visualization tool"}
+            demoLink={"https://imgur.com/a/Xr4P6Oj"}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Project
             githubUrl={"https://github.com/professorjrod/Jareds-NLP-Client"}
             coverUrl={
               "https://stackify.com/wp-content/uploads/2019/01/Ruby-vs-Python.jpg"
@@ -100,7 +109,7 @@ const Project = ({ title, githubUrl, coverUrl, tag, demoLink }) => {
                 href={demoLink}
               >
                 {" "}
-                Tech Demo{" "}
+                Demo{" "}
               </a>
             ) : null}
 

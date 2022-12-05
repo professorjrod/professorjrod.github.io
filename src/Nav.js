@@ -1,29 +1,46 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
 const Nav = () => {
+  const url = useLocation();
   return (
     <nav>
       <span className="rounded-lg px-3 py-2">Jared's personal page</span>
-      <a
-        className=" inline-block h-fit w-fit p-2 ml-auto mr-autp rounded-lg bg-violet-400 hover:bg-violet-500"
-        href="https://www.github.com/professorjrod"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Github👋
-      </a>
+
+      <div className="flex items-center space-x-5">
+        <Link to="/">
+          <span
+            className={
+              "rounded-lg px-3 text-sm font-medium py-2" +
+              (url.pathname === "/" ? " font-bold bg-purple-500" : "")
+            }
+          >
+            {" "}
+            About{" "}
+          </span>
+        </Link>
+        <Link to="/projects">
+          <span
+            className={
+              "rounded-lg px-3 text-sm font-medium py-2" +
+              (url.pathname === "/projects" ? " font-bold bg-purple-500" : "")
+            }
+          >
+            Projects
+          </span>
+        </Link>
+      </div>
+
       <ul className="gap-2 text-sm font-medium text-black">
         <li>
-          <Link to="/">
-            <span className="rounded-lg px-3 py-2"> About </span>
-          </Link>
-        </li>
-
-        <li>
-          <Link to="/projects">
-            <span className="rounded-lg px-3 py-2 "> Projects </span>
-          </Link>
+          <a
+            className="rounded-lg px-3 py-2 grow"
+            href="https://www.github.com/professorjrod"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github👋
+          </a>
         </li>
         <li>
           <a

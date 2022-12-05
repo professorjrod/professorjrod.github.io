@@ -6,6 +6,9 @@ html {
   @apply bg-violet-200;
   font-family: "IBM Plex Mono", monospace;
 }
+body {
+  @apply text-purple-900;
+}
 .swiper {
   @apply w-[90%] mt-6;
 }
