@@ -88,7 +88,7 @@ const Project = ({ title, githubUrl, coverUrl, tag, demoLink }) => {
   return (
     <ul className="swiper-wrapper">
       <li className="swiper-slide">
-        <div className="relative block border-double border-4 rounded-md border-gray-500 mb-8 p-2">
+        <div className="relative block  rounded-md shadow-lg border border-purple-300 mb-8 p-2">
           <h5 className="mt-4 text-lg font-bold">{title}</h5>
           <img
             alt="Hotdug Mug"
@@ -97,7 +97,7 @@ const Project = ({ title, githubUrl, coverUrl, tag, demoLink }) => {
           />
 
           <div className="p-6">
-            <span className="my-2 inline-block bg-gray-400 px-3 py-1 text-xs font-medium">
+            <span className="my-2 inline-block bg-gray-400 px-3 py-1 text-xs font-medium text-white">
               {tag}
             </span>
 
@@ -112,7 +112,11 @@ const Project = ({ title, githubUrl, coverUrl, tag, demoLink }) => {
             ) : null}
 
             <br />
-            <button name="add" type="button" className="btn mt-2 bg-[#db5461]">
+            <button
+              name="add"
+              type="button"
+              className="btn mt-2 bg-[#db5461] text-white"
+            >
               <a className="text-sm font-medium" href={githubUrl}>
                 View on GitHub
               </a>

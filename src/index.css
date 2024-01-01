@@ -22,10 +22,10 @@ a {
   @apply w-12 h-12 m-auto;
 }
 .technology-stack {
-  @apply flex flex-row items-center w-fit space-x-2 m-auto mt-4;
+  @apply flex flex-wrap items-center w-fit space-x-2 m-auto mt-4;
 }
 nav {
-  @apply mx-auto sm:h-12 md:h-auto lg:h-auto flex max-w-[80%] justify-between p-4 bg-purple-300 rounded-br-xl rounded-bl-xl;
+  @apply mx-auto sm:h-12 md:h-auto lg:h-auto flex lg:max-w-[80%]  justify-between p-4 bg-purple-300 rounded-br-xl rounded-bl-xl;
 }
 h4 {
   @apply text-xs ml-2 text-center font-bold;
@@ -35,4 +35,13 @@ ul {
 }
 li {
   @apply m-0.5;
+}
+.tech-container {
+  @apply p-2 shadow-md rounded-lg hover:bg-slate-700 hover:text-white hover:rounded-2xl transition-all duration-300 ease-linear;
+}
+.tech-tooltip {
+  @apply absolute w-auto p-2 mb-4 ml-14 min-w-max rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-top;
+}
+.title {
+  @apply rounded-lg hidden md:block px-3 py-2;
 }

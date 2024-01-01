@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
       <div className="flex justify-center m-8">
-        <div className="w-6/12 sm:w-4/12 px-4 h-[80%] text-center">
+        <div className=" sm:w-[80%] lg:w-6/12 px-4 h-[80%] text-center">
           <p>
             I am a smart, hungry and humble{" "}
             <strong>

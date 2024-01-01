@@ -5,7 +5,7 @@ const Nav = () => {
   const url = useLocation();
   return (
     <nav>
-      <span className="rounded-lg px-3 py-2">Jared's personal page</span>
+      <span className="title">Jared's personal page</span>
 
       <div className="flex items-center space-x-5">
         <Link to="/">
